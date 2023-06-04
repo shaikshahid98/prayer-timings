@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+
+.card{
+    margin: 5px 0;
+    display: flex;
+    text-align: left;
+    font-family: Ubuntu;
+    padding: 2px 0;
+    font-weight: 0;
+}
+
+.headline,.content{
+    margin: 0;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 200;
+}
+.content{
+    font-weight: 500;
+}

@@ -1,24 +1,39 @@
 import logo from './logo.svg';
 import './App.css';
+import Wrapper from './UI/Wrapper';
+import PrayerTable from './table/PrayerTable';
+import OtherData from './table/OtherData';
+
+const Other = [
+  {
+      id: '1',
+      info : 'End time of Fajar',
+      content: '5:40 AM'
+  },
+  {
+      id:'2',
+      info : 'Ishraq time begins',
+      content : '6:00 AM'
+  },
+  {
+      id:'3',
+      info : 'Zawal time begins',
+      content : '12:30 PM'
+  }
+]
 
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div>
+      <Wrapper>
+      <PrayerTable />
+      {Other.map((item,index)=>
+   <OtherData key={index} info = {item.info} content= {item.content} ></OtherData>)
+    }
+      </Wrapper>
+      </div>
   );
 }
 
