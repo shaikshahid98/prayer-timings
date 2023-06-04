@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Wrapper from './UI/Wrapper';
 import PrayerTable from './table/PrayerTable';
